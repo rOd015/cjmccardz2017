@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carding & Juning Jewellery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .description {
+      flex: 1;
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); 
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .description {
+        padding-left: 0;
+        margin-top: 15px;
+      }
+
+      .logo img {
+        max-width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="Your Logo" />
+      </div>
+      <div class="description">
+        <p><strong>Carding & Juning Jewelry Direct Supplier</strong> since 2017. We offer high-quality 18k, 21k, 24k gold, Japan gold, and even mirror pieces. Trusted by thousands of buyers and resellers nationwide.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="pricelist.jpg" alt="Gold Jewelry 1" />
+      <img src="bdo.jpg" alt="Gold Jewelry 2" />
+      <img src="gcash.jpg" alt="Gold Jewelry 3" />
+      <img src="layaway.jpg" alt="Gold Jewelry 4" />
+      <img src="cc.jpg" alt="Gold Jewelry 5" />
+    </div>
+  </div>
+</body>
+</html>
